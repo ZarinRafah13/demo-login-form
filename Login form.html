@@ -25,6 +25,14 @@ button {
   width: 100%;
 }
 
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
 button:hover {
   opacity: 0.8;
 }
@@ -71,13 +79,22 @@ span.psw {
 <h2>Login Form</h2>
 
 <form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+<div class="container">
+  <label for="uname"><b>Department</b></label>
+  <select id="Department" name="department">
+  <option value="cse">Computer Science & Engineering (CSE)</option>
+  <option value="ce">Civil Engineering (CE)</option>
+  <option value="me">Mechanical Engineering (ME)</option>
+  <option value="ee">Electrical and Electronics Engineering (EEE)</option>
+  <option value="ipe">Industrial Production Engineering (IPE)</option>
+  <option value="bba">Bachelor of Business Administration (BBA)</option>
+  <option value="bba">English</option>
+  </select>
+
+  
+    <label for="uname"><b>Student Id</b></label>
+    <input type="text" placeholder="Enter Student ID" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
